@@ -168,6 +168,111 @@ body {
   color: #b7b7b7;
 }
 
+.team {
+  margin-top: 138px;
+  margin-bottom: 150px;
+  background-color: #fff;
+}
+
+.team .block__head {
+  margin-bottom: 131px;
+}
+
+.block__head {
+  text-align: center;
+}
+.block__title {
+  font-family: 'HelveticaNeueLTProLt', sans-serif;
+  font-size: 34px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #1d1e1f;
+  margin-bottom: 13px;
+}
+.block__text {
+  font-family: "Merriweather-LightItalic", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: #898888;
+}
+
+.team__inner {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: -70px;
+}
+
+.team__inner .team__item {
+  position: relative;
+  width: calc(100% / 3);
+  margin-bottom: 70px;
+}
+
+.team__item {
+  font-family: 'elveticaNeueLTProRoman', sans-serif;
+  text-align: center;
+}
+.team__item-img {
+  width: 169px;
+  height: 169px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 29px;
+}
+.team__item-title {
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #464646;
+}
+.team__item-text {
+  font-size: 13px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #b3b3b3;
+  margin-bottom: 22px;
+}
+
+.team__icon:before {
+  font-size: 22px;
+  color: #e4e4e4;
+  transition: .3s;
+}
+
+.team__icon:hover:before {
+  font-size: 22px;
+  color: #857d7d
+}
+
+.team__icon:before:not(:last-child) {
+  margin-right: 14px;
+}
+
+.icon-twitter {
+}
+.icon-instagram {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1150px){
   .about__item {
     width: 350px;
@@ -189,6 +294,10 @@ body {
   }
   .about__item {
     width: 100%;
+  }
+
+  .team__inner .team__item {
+    width: calc(100% / 2);
   }
 }
 
@@ -223,6 +332,24 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  .team {
+    margin-top: 70px;
+    margin-bottom: 75px;
+  }
+
+  .team .block__head {
+    margin-bottom: 75px;
+  }
+
+  .team__inner {
+    margin-bottom: -30px;
+  }
+
+  .team__inner .team__item {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
 
